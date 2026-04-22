@@ -41,7 +41,22 @@ OpenCode Agent (developer.md)
 
 ## 📦 Installation
 
-### Option 1: Quick Copy (Recommended)
+### Option 1: npm (Recommended) 📦
+
+```bash
+npm install opencode-moonshot-compatibility
+```
+
+Then add to your `~/.config/opencode/opencode.json`:
+```json
+{
+  "plugin": [
+    "opencode-moonshot-compatibility"
+  ]
+}
+```
+
+### Option 2: Quick Copy
 
 1. Download `index.js` from this repo
 2. Place it in your OpenCode plugins folder:
@@ -57,21 +72,6 @@ OpenCode Agent (developer.md)
      ]
    }
    ```
-
-### Option 2: npm (Coming Soon)
-
-```bash
-npm install opencode-moonshot-compatibility
-```
-
-Then in `opencode.json`:
-```json
-{
-  "plugin": [
-    "opencode-moonshot-compatibility"
-  ]
-}
-```
 
 ---
 
