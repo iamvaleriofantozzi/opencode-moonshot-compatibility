@@ -1,0 +1,20 @@
+{
+  "name": "opencode-moonshot-compatibility",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that forces temperature to 1 for Moonshot AI / Kimi models",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "opencode",
+    "plugin",
+    "moonshot",
+    "kimi",
+    "temperature"
+  ],
+  "author": "Valerio Fantozzi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamvaleriofantozzi/opencode-moonshot-compatibility.git"
+  }
+}
