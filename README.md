@@ -8,7 +8,7 @@
 ## ✨ What It Does
 
 When you use **Moonshot AI** (Kimi) models with OpenCode, the API only accepts `temperature: 1`.  
-But OpenCode agents (like `@developer`) usually set lower temperatures (e.g. `0.3`) for better code quality.
+But OpenCode agents usually set lower temperatures (e.g. `0.3`) for better code quality.
 
 This plugin **hooks into every LLM call** and silently forces `temperature = 1` **only** when the active model is a Moonshot / Kimi one.
 
