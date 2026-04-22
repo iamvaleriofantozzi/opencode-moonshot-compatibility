@@ -19,15 +19,13 @@ Your other agents and models stay completely untouched! 🎯
 ## 🔧 How It Works
 
 ```mermaid
-flowchart TD
-    A[OpenCode Agent<br/>developer.md] -->|temperature: 0.3| B[Every LLM Call]
-    B --> C{🌙 Plugin Hook<br/>chat.params}
-    
-    C -->|Provider: moonshotai<br/>Model: kimi-*| D[Override to<br/>temperature: 1]
-    C -->|Provider: openai<br/>Provider: anthropic<br/>Provider: ollama| E[Leave unchanged]
-    
-    D --> F[Sent to Moonshot API ✅]
-    E --> G[Sent to Original API ✅]
+graph TD
+    A["OpenCode Agent: developer.md"] -->|"temperature: 0.3"| B["Every LLM Call"]
+    B --> C{"Plugin Hook: chat.params"}
+    C -->|"Provider: moonshotai / Model: kimi-*"| D["Override to temperature: 1"]
+    C -->|"Other providers"| E["Leave unchanged"]
+    D --> F["Sent to Moonshot API"]
+    E --> G["Sent to Original API"]
 ```
 
 **Zero side effects** on other providers like OpenAI, Anthropic, Ollama, etc.
